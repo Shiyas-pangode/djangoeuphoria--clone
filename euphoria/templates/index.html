@@ -1,0 +1,646 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>euphoria</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href= "{% static 'css/style.css'  %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=
+    Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;
+    900&family=Montserrat:ital,wght@0,100..900;1,100..900&family
+    =Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:
+    ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,
+    wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section id="navbar">
+        <div class="header">
+            <h1><a href="#"><img src="{% static 'image/Logo.svg' %}" alt="image"/></a></h1>
+        </div>
+        <ul class="nav-menu">
+            <li><a class="navmenu-text" href="#">Shop</a></li>
+            <li ><a class="navmenu-text" href="#">Men</a></li>
+            <li><a class="navmenu-text" href="#">Women</a></li>
+            <li class="combos"><a class="navmenu-text" href="#">Combos</a></li>
+            <li><a class="navmenu-text" href="#">Joggers</a></li>
+        </ul>
+        <div class="search-bar">
+            <img src="{% static 'image/search.svg' %}" alt="image"/>
+            <input class="input" type="text" placeholder="search">
+        </div>
+        <div class="navbar-right">
+            <span><img src="{% static 'image/wishlist.svg' %}" alt="image"/></span>
+            <span><img src="{% static 'image/account.svg' %}" alt="image"/></span>
+            <span><img src="{% static 'image/cart.svg' %}" alt="image"/></span>
+        </div>
+        <div class="menubar">
+            <span class="shade-menubar"><img src="{% static 'image/svgexport-24.svg' %}" alt="image"/></span>
+        </div>
+        <ul class="dropdown">
+            <li><img class="close-icon" src="{% static 'image/svgexport-3.svg' %}" alt="image"></li>
+            <li class="drop-text">Shop</li>
+            <li ><a class="drop-text" href="#">Men</a></li>
+            <li ><a class="drop-text"href="#">Women</a></li>
+            <li><a  class="drop-text"href="#">Combos</a></li>
+            <li ><a  class="drop-text"href="#">Joggers</a></li>
+            
+        </ul>
+    </section>
+    <section id="spotlight">
+        <section id="wrapper">
+            <div class="spotlight-text">
+                <div class="spot-offer-text">
+                    <div class="arrow-left">
+                        <img class="slide-left" src="{% static 'image/right-arrow-light.svg' %}" alt="image"/>
+                    </div>
+                    <div class="text-valuepack">
+                        <div class="spotproduct-name">
+                            <h3>T-Shirts</h3>
+                            <h3>/</h3>
+                            <h3>Tops</h3>
+                        </div>
+                        <div class="summer-valuepack">
+                            <h2>Summer Value Pack</h2>
+                        </div>
+                        <div class="spotproduct-name">
+                            <h3>Cool</h3>
+                            <h3>/</h3>
+                            <h3>Colorful</h3>
+                            <h3>/</h3>
+                            <h3>Comfy</h3>
+                        </div>   
+                    </div>
+                    <div class="arrow-left">
+                        <img class="slide-right" src="{% static 'image/right-arrow-light.svg' %}" alt="image"/>
+                    </div>
+                </div>
+                <div class="spot-button">
+                    <button class="shop-now">Shop Now</button>
+                </div>
+                <div class="slider-preview">
+                    <span class="white"></span>
+                    <span class="transparent"></span>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="productoffer">
+        <div class="offercards">
+            <div class="offercard-left">
+                <div class="leftcard-text">
+                    <h6 class="leftcard-price">Low Price</h6>
+                    <h2 class="mid-textleft">High Coziness</h2>
+                    <h4 class="leftcard-off">UPTO 50% OFF</h4>
+                    <h6 class="leftcard-link"><a href="#">Explore Items</a></h6>
+                </div>
+            </div>
+            <div class="offercard-right">
+                <div class="rightcard-text">
+                    <h6 class="rightcard-price">Beyoung Presents</h6>
+                    <h2 class="mid-textright">Breezy Summer Style</h2>
+                    <h4 class="rightcard-off">UPTO 50% OFF</h4>
+                    <h6 class="rightcard-link"><a href="#">Explore Items</a></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="new-arrival">
+        <div class="wrapper">
+            <div class="arrival-head">
+                <span class="rectangle"></span>
+                <h2 class="arrivalhead-text">New Arrival</h2>
+            </div>
+           <div class="slider">
+                <div class="arrival-arrow-img">
+                    <img class ="left-arrow" src="image/arrow-left.svg" alt="image"/>
+                </div>
+                <div class="arrival-content">
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-1.jpg" alt="image"/>
+                        <h6 class="image-text">Knitted Joggers</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-3.jpg" alt="image"/>
+                        <h6 class="image-text">Full Sleeve</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-4.jpg" alt="image"/>
+                        <h6 class="image-text">Active T-Shirts</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-2.jpg" alt="image"/>
+                        <h6 class="image-text">Urban Shirts</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-6.jpg" alt="image"/>
+                        <h6 class="image-text">Knitted Joggers</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-13.jpg" alt="image"/>
+                        <h6 class="image-text">Full Sleeve</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-1.jpg" alt="image"/>
+                        <h6 class="image-text">Active T-Shirts</h6>
+                    </div>
+                    <div class="arrival-card-content">
+                        <img class="arrival-image" src="image/img-12.jpg" alt="image"/>
+                        <h6 class="image-text">Urban Shirts</h6>
+                    </div>
+                    
+                </div>
+                <div class="arrival-arrow-img">
+                    <img class="right-arrow" src="image/arrow-right.svg" alt="image"/>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section id="advertisement">
+        <div class="wrapper">
+            <div class="advertisement-content">
+                <div class="advertisement-img1">
+                    <h2 class="advertisement-card-subhead">
+                        WE MADE YOUR EVERYDAY FASHION BETTER!
+                    </h2>
+                    <p class="adv-paragraph">In our journey to improve everyday fashion, euphoria 
+                        presents EVERYDAY wear
+                         range - Comfortable & Affordable fashion 24/7
+                    </p>
+                    <button class="adv-button">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="advertisement-img2">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div class="wrapper">
+            <div class="products-head">
+                <span class="rectangle"></span>
+                <h2 class="products-head-text">Categories For Men</h2>
+            </div>
+            <div class="products-content">
+                <div class="products-card-content">
+                    <img class="products-image" src="image/img-5.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1" >Shirts</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-card-content">
+                    <img class="products-image"src="image/img-6.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Printed T-Shirts</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-card-content">
+                    <img class="products-image"src="image/img-7.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Plain T-Shirt</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-head-text">
+                    <img class="products-image"src="image/img-8.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Polo T-Shirt</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="products-content">
+                <div class="products-card-content">
+                    <img class="products-image" src="image/img-9.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Hoodies & Sweetshirt</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-card-content">
+                    <img class="products-image"src="image/img-10.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Jeans</h6>
+                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-card-content">
+                    <img class="products-image" src="image/Rectangle 22.png" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Activewear</h6>
+                            <span><a class="explore"href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-head-text">
+                    <img class="products-image"src="image/img-11.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Boxers</h6>
+                            <span><a class="explore"href="product.html">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="womens-products">
+        <div class="wrapper">
+            <div class="products-head">
+                <span class="rectangle"></span>
+                <h2 class="products-head-text">Categories For Women</h2>
+            </div>
+            <div class="products-content">
+                <div class="products-card-content">
+                    <img class="products-image" src="image/img-12.jpg" alt="Shirts"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Hoodies & Sweetshirt</h6>
+                            <span><a class="explore" href=".#">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow">
+                            <img  class="explore" src="image/arrow-right.svg" alt="arrow"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-card-content">
+                    <img class="products-image" src="image/img-13.jpg" alt="Coats & Parkas"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Coats & Parkas</h6>
+                            <span><a class="explore" href=".#">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow">
+                            <img src="image/arrow-right.svg" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-card-content">
+                    <img class="products-image"src="image/img-14.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Tees & T-Shirt</h6>
+                            <span><a class="explore"href="#">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="products-head-text">
+                    <img class="products-image"src="image/img-15.jpg" alt="image"/>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Boxers</h6>
+                            <span><a class="explore"href="#">Explore Now!</a></span>
+                        </div>
+                        <div class="product-arrow" >
+                            <img src="image/arrow-right.svg" alt="image">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="brands">
+        <div class="wrapper">
+            <div class="brand-card">
+                <div class="brandcard-content">
+                    <h1 class="brand-head">Top Brands Deal</h1>
+                    <p class="brand-subtext">Up To <span style="color:#FBD103 ;">60% </span>off on brands</p>
+                    <div class="brands-logos">
+                        <div class="brand-image">
+                            <img class="instagram" src="image/nike.jpg" alt="image"/>
+                        </div>
+                        <div class="brand-image">
+                            <img  class="h&m" src="image/H&M.jpg" alt="image"/>
+                        </div>
+                        <div class="brand-image">
+                            <img class="levis" src="image/levis.jpg" alt="image"/>
+                        </div>
+                        <div class="brand-image">
+                            <img class="uspa"  src="image/USPA.jpg" alt="image"/>
+                        </div>
+                        <div class="brand-image">
+                            <img class="puma" src="image/puma.jpg" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lime-light">
+        <div class="wrapper">
+            <div class="light-head">
+                <span class="rectangle"></span>
+                <h2 class="light-head-text">In The Limelight</h2>
+            </div>
+            <div class="light-content">
+                <div class="light-card-content">
+                    <div class="light-image">
+                        <div class="span">
+                            <span class="image-whitespace">
+                            <div class="wishlist">
+                                <img src="image/wishlist.svg" alt="image"/>
+                            </div>
+                        </span></div>
+                    </div>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Black Sweatshirt with ....</h6>
+                            <span><a class="explore" href="#">Jhanvi's  Brand</a></span>
+                        </div>
+                       <div class="light-arrow">
+                            <img  src="image/arrow-right.svg" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="light-card-content">
+                    <div class="light-image1">
+                        <div class="span">
+                            <div class="image-whitespace">
+                                <div class="wishlist">
+                                    <img src="image/wishlist.svg" alt="image"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">line Pattern Black H...</h6>
+                            <span><a class="explore" href="#">AS's  Brand</a></span>
+                        </div>
+                        <div class="light-arrow">
+                            <img  src="image/arrow-right.svg" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="light-card-content">
+                    <div class="light-image2">
+                        <div class="span">
+                            <span class="image-whitespace">
+                            <div class="wishlist">
+                                <img src="image/wishlist.svg" alt="image"/>
+                            </div>
+                        </span></div>    
+                    </div>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Black Shorts</h6>
+                            <span><a class="explore"href="#">MM's  Brand</a></span>
+                        </div>
+                        <div class="light-arrow">
+                            <img  src="image/arrow-right.svg" alt="image"/>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="light-head-text">
+                    <div class="light-image3">
+                        <div class="span">
+                            <span class="image-whitespace">
+                                <div class="wishlist">
+                                    <img src="image/wishlist.svg" alt="image"/>
+                                </div>
+                        </span></div>
+                    </div>
+                    <div class="image-text-arrow">
+                        <div class="image-text">
+                            <h6 class="image-text1">Levender Hoodie with ....</h6>
+                            <span><a class="explore"href="#">Nike,s  Brand</a></span>
+                        </div>
+                        <div class="rate">
+                            <h6 class="number">$119.00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback">
+        <div class="wrapper">
+            <div class="feedback-head">
+                <span class="rectangle"></span>
+                <h2 class="feedback-head-text">Feedback</h2>
+            </div>
+            <div class="feedback-content">
+                <div class="feedback-cards1">
+                    <div class="feedback-image">
+                        <div class="profile">
+                            <img src="image/span-1.svg" alt="image"/>
+                        </div>
+                        <div class="stars">
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star_half.png" alt="image"/>
+                            <img src="image/star_outline.png" alt="image"/>
+                        </div>
+                    </div>
+                    <h4 class="name">Floyd Miles</h4>
+                    <p class="comments">Amet minim mollit non deserunt ullamco est sit
+                         aliqua dolor
+                         do amet sint. Velit officia consequat duis enim velit mollit. 
+                        
+                    </p>
+                    <p class="comments1">Exercitation veniam consequat sunt nostrud amet.
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                         Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+
+                </div>
+                <div class="feedback-cards2">
+                    <div class="feedback-image">
+                            <div class="profile">
+                                <img src="image/span-2.svg" alt="image"/>
+                            </div>
+                        <div class="stars">
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star_outline.png" alt="image"/>
+                        </div>
+                    </div>
+                    <h4 class="name">Ronald Richards</h4>
+                    <p class="comments">ullamco est sit aliqua dolor do amet sint. 
+                        Velit officia consequat duis enim velit mollit.
+                         Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="feedback-cards3">
+                    <div class="feedback-image">
+                        <div class="profile">
+                            <img src="image/span-3.svg" alt="image"/>
+                        </div>
+                        <div class="stars">
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star.svg" alt="image"/>
+                            <img src="image/star_half.png" alt="image"/>
+                            <img src="image/star_outline.png" alt="image"/>
+                        </div>
+                    </div>
+                    <h4 class="name">Savannah Nguyen</h4>
+                    <p class="comments">Amet minim mollit non deserunt ullamco est sit
+                         aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        
+                    </p>
+                    <p class="comments1">Exercitation veniam consequat sunt nostrud amet.
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                         Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+              </div>  
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="top-text">
+                    <h4 class="head">Need Help</h4>
+                    <h6><a class="sub-link" href="#">Contact Us</a></h6>
+                    <h6 ><a class="sub-link" href="#">Track Order</a></h6>
+                    <h6><a class="sub-link" href="#">Returns & Refunds</a></h6>
+                    <h6><a class="sub-link" href="#">FAQ's</a></h6>
+                    <h6><a class="sub-link" href="#">FAQ's</a></h6>
+                </div>
+                <div class="top-text">
+                    <h4 class="head"> Company</h4>
+                    <h6><a class="sub-link" href="#">About Us</a</h6>
+                    <h6><a class="sub-link" href="#">euphoria Blog</a></h6>
+                    <h6><a class="sub-link" href="#">euphoriastan</a></h6>
+                    <h6><a class="sub-link" href="#">Collaboration</a></h6>
+                    <h6><a class="sub-link" href="#">Media</a></h6>
+                </div>
+                <div class="top-text">
+                    <h4 class="head">More Info</h4>
+                    <h6><a class="sub-link" href="#">Term and Conditions</a></h6>
+                    <h6><a class="sub-link" href="#">Privacy Policy</a></h6>
+                    <h6><a class="sub-link" href="#">Shipping Policy</a></h6>
+                    <h6><a class="sub-link" href="#">Sitemap</a></h6>
+                </div>
+                <div class="top-text">
+                    <h4 class="head">Location</h4>
+                    <h6><a class="sub-link" href="#">support@euphoria.in</a></h6>
+                    <h6><a class="sub-link" href="#">Eklingpura Chouraha, Ahmedabad Main Road</a></h6>
+                    <h6><a class="sub-link" href="#">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a></h6>
+                    <h3 class="bottom-text">Download The App</h3>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="mid-content">
+                    <div class="mid-logos">
+                        <span class="logo-whitebg">
+                            <a href="#"><img class="facebook" src="image/facebook.svg" alt=""></a>
+                        </span>
+                        <span class="logo-whitebg">
+                            <a href="#"><img class="instagram" src="image/instagram.svg" alt=""></a>
+                        </span>
+                        <span class="logo-whitebg">
+                            <a href="#"><img class="twitter" src="image/twitter.svg" alt=""></a>
+                        </span>
+                        <span class="logo-whitebg">
+                            <a href="#"><img class ="linkedin" src="image/linkedin.svg" alt=""></a>
+                        </span>
+                    </div>
+                    <div class="appstore">
+                        <div class="appstore-content">
+                            <div class="playstore">
+                                <img src="image/playstore.svg" alt="image"/>
+                            </div>
+                            <span>
+                                <a href="#"><h6 class="store-text1">android app on</h6></a>
+                                <a href="#"><h5 class="store-text2">Google Play</h5></a>
+                            </span>
+                        </div>
+                        <div class="appstore-content">
+                            <div class="playstore">
+                                <img src="image/phone.svg" alt="image"/>
+                            </div>
+                            <span>
+                                <a href="#"><h6 class="store-text1">Available on the</h6></a>
+                                <a href="#"><h5 class="store-text2">App Store</h5></a>
+                            </span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="line"></div>
+                <div class="mid-bottom-font">
+                    <h3 class="popular">Popular Categories</h3>
+                    <img class="arrow-down" src="image/arrow-down.svg" alt="image"/>
+                </div>
+                <div class="line"></div>
+                <div class="footer-bottom">
+                    <h2><a class="copy-right" href="#">
+                        Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                    </a></h2>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

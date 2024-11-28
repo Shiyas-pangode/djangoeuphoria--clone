@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
-class SomeModel(models.Model):
-    name = models.CharField(max_length=100)
+from django.db import models
 
-    def some_method(self):
-        users = User.objects.all()  # Make sure this line is properly indented
+class ImageUpload(models.Model):
+    title = models.CharField(max_length=100)  # Example field
+    image = models.ImageField(upload_to='images/')  # Field for image upload
+
+    def __str__(self):
+        return self.title
+

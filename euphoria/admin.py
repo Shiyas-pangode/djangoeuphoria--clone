@@ -1,3 +1,9 @@
 from django.contrib import admin
+from  .models import ImageUpload
+from django.utils.html import format_html
 
-# Register your models here.
+admin.site.register(ImageUpload)
+class ImageUploadAdmin(admin.ModelAdmin):
+    list_display = ('title', 'image')
+
+    

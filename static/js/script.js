@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded',() => {
         });
     });
     const backgrounds = [
-        'url("image/bg-1.jpg")',
-        'url("image/bg-2.jpg")',
-        'url("image/bg-3.jpg")'  
+        'url("http://127.0.0.1:8000/media/images/bg-1.jpg")',
+        'url("http://127.0.0.1:8000/media/images/bg-2.jpg")',
+        'url("http://127.0.0.1:8000/media/images/bg-3.jpg")'  
     ];
     
     let currentIndex1 = 0;
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded',() => {
     document.querySelector('.slide-right').addEventListener('click', () => {
         currentIndex1 = (currentIndex1 === backgrounds.length - 1) ? 0 : currentIndex1 + 1;
         updateBackground();
-        u
+        
     });
     
     function updateBackground() {
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded',() => {
         dropDown.style.display="flex";
         
     })
-    d
+    
        
     
     

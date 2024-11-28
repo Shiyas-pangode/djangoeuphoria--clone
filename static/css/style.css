@@ -144,7 +144,7 @@
 }
 #spotlight{
     
-    background-image: url("{% static 'image/bg-1.jpg' %}");
+    background-image: url(http://127.0.0.1:8000/media/images/bg-1.jpg);
     height: 751px;  
     width: 100%;
     background-size: cover;
@@ -265,7 +265,7 @@
     width: 100%;
 }
 #productoffer .offercards .offercard-left{
-    background-image: url(image/bg-2.jpg);
+    background-image: url(http://127.0.0.1:8000/media/images/bg-2.jpg);
     background-size: 150% 205%;
     background-position: left top;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@
     width: 100%;
 }
 #productoffer .offercards .offercard-right{
-    background-image:  url("{% static 'image/bg-3.jpg' %}");
+    background-image:  url(http://127.0.0.1:8000/media/images/bg-3.jpg);
     background-position: 95% 10%;
     background-repeat: no-repeat;
     background-size:   140%  160% ;
@@ -475,7 +475,7 @@ display: flex;
     width: 100%;
 }
 #advertisement .advertisement-content .advertisement-img1{
-    background-image: url(image/bg-4.jpg);
+    background-image: url(http://127.0.0.1:8000/media/images/bg-4.jpg);
     height:639.72px ;
     width:614px ;
     background-repeat: no-repeat;
@@ -524,7 +524,7 @@ display: flex;
     width: 100%;
 }
 #advertisement .advertisement-content .advertisement-img2{
-    background-image: url(image/bg-5.jpg);
+    background-image: url(http://127.0.0.1:8000/media/images/bg-5.jpg);
     height:639.72px ;
     width: 626px;
     background-repeat: no-repeat;

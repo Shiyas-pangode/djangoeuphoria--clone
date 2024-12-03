@@ -37,7 +37,7 @@
         <div class="navbar-right">
             <span><img src="{% static 'image/wishlist.svg' %}" alt="image"/></span>
             <span><img src="{% static 'image/account.svg' %}" alt="image"/></span>
-            <span><img src="{% static 'image/cart.svg' %}" alt="image"/></span>
+            <a href="{% url 'cart' %}"><span><img src="{% static 'image/cart.svg' %}" alt="image"/></span></a>
         </div>
         <div class="menubar">
             <span class="shade-menubar"><img src="{% static 'image/svgexport-24.svg' %}" alt="image"/></span>
@@ -207,7 +207,7 @@
                     <div class="image-text-arrow">
                         <div class="image-text">
                             <h6 class="image-text1">Printed T-Shirts</h6>
-                            <span><a class="explore" href="product.html">Explore Now!</a></span>
+                            <span><a class="explore" href="{% url 'products' %}">Explore Now!</a></span>
                         </div>
                         <div class="product-arrow" >
                             <img src="{% static 'image/arrow-right.svg' %}" alt="image">
@@ -307,55 +307,55 @@
             <div class="products-content">
                 
                 <div class="products-card-content">
-                    <img class="products-image" src= "http://127.0.0.1:8000/media/images/bg-5.jpg"  alt="Shirts"/>
+                    <img class="products-image" src= "{% static 'image/img-12.jpg' %}"  alt="Shirts"/>
                     <div class="image-text-arrow">
                         <div class="image-text">
-                            <h6 class="image-text1"></h6>
+                            <h6 class="image-text1">Hoodies & Sweetshirt</h6>
                             
                             <span><a class="explore" href="#">Explore Now!</a></span>
                         </div>
                         <div class="product-arrow">
-                            <img  class="explore" src="image/arrow-right.svg" alt="arrow"/>
+                            <img  class="explore" src="{% static 'image/arrow-right.svg' %}" alt="arrow"/>
                         </div>
                     </div>
                     
                 </div>
                 
                 <div class="products-card-content">
-                    <img class="products-image" src="image/img-13.jpg" alt="Coats & Parkas"/>
+                    <img class="products-image" src="{% static 'image/img-13.jpg' %}" alt="Coats & Parkas"/>
                     <div class="image-text-arrow">
                         <div class="image-text">
                             <h6 class="image-text1">Coats & Parkas</h6>
                             <span><a class="explore" href=".#">Explore Now!</a></span>
                         </div>
                         <div class="product-arrow">
-                            <img src="image/arrow-right.svg" alt="arrow">
+                            <img src="{% static 'image/arrow-right.svg' %}" alt="arrow">
                         </div>
                     </div>
                 </div>
                 
                 <div class="products-card-content">
-                    <img class="products-image"src="image/img-14.jpg" alt="image"/>
+                    <img class="products-image"src="{% static 'image/img-14.jpg' %}" alt="image"/>
                     <div class="image-text-arrow">
                         <div class="image-text">
                             <h6 class="image-text1">Tees & T-Shirt</h6>
                             <span><a class="explore"href="#">Explore Now!</a></span>
                         </div>
                         <div class="product-arrow" >
-                            <img src="image/arrow-right.svg" alt="image">
+                            <img src="{% static 'image/arrow-right.svg' %}" alt="image">
                         </div>
                        
                     </div>
                 </div>
                 <div class="products-head-text">
-                    <img class="products-image"src="image/img-15.jpg" alt="image"/>
+                    <img class="products-image"src="{% static 'image/img-15.jpg' %}" alt="image"/>
                     <div class="image-text-arrow">
                         <div class="image-text">
                             <h6 class="image-text1">Boxers</h6>
                             <span><a class="explore"href="#">Explore Now!</a></span>
                         </div>
                         <div class="product-arrow" >
-                            <img src="image/arrow-right.svg" alt="image">
+                            <img src="{% static 'image/arrow-right.svg' %}" alt="image">
                         </div>
                        
                     </div>
@@ -371,19 +371,19 @@
                     <p class="brand-subtext">Up To <span style="color:#FBD103 ;">60% </span>off on brands</p>
                     <div class="brands-logos">
                         <div class="brand-image">
-                            <img class="instagram" src="image/nike.jpg" alt="image"/>
+                            <img class="instagram" src="{% static 'image/nike.jpg' %}" alt="image"/>
                         </div>
                         <div class="brand-image">
-                            <img  class="h&m" src="image/H&M.jpg" alt="image"/>
+                            <img  class="h&m" src="{% static 'image/H&M.jpg' %}" alt="image"/>
                         </div>
                         <div class="brand-image">
-                            <img class="levis" src="image/levis.jpg" alt="image"/>
+                            <img class="levis" src="{% static 'image/levis.jpg' %}" alt="image"/>
                         </div>
                         <div class="brand-image">
-                            <img class="uspa"  src="image/USPA.jpg" alt="image"/>
+                            <img class="uspa"  src="{% static 'image/USPA.jpg' %}" alt="image"/>
                         </div>
                         <div class="brand-image">
-                            <img class="puma" src="image/puma.jpg" alt="image"/>
+                            <img class="puma" src="{% static 'image/puma.jpg' %}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -402,7 +402,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                             <div class="wishlist">
-                                <img src="image/wishlist.svg" alt="image"/>
+                                <img src="{% static 'image/wishlist.svg' %}" alt="image"/>
                             </div>
                         </span></div>
                     </div>
@@ -412,16 +412,16 @@
                             <span><a class="explore" href="#">Jhanvi's  Brand</a></span>
                         </div>
                        <div class="light-arrow">
-                            <img  src="image/arrow-right.svg" alt="image"/>
+                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                     </div>
                 </div>
                 <div class="light-card-content">
                     <div class="light-image1">
                         <div class="span">
-                            <div class="image-whitespace">
+                            <div class="{% static 'image-whitespace' %}">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="image"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="image"/>
                                 </div>
                             </div>
                         </div>
@@ -432,7 +432,7 @@
                             <span><a class="explore" href="#">AS's  Brand</a></span>
                         </div>
                         <div class="light-arrow">
-                            <img  src="image/arrow-right.svg" alt="image"/>
+                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -441,7 +441,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                             <div class="wishlist">
-                                <img src="image/wishlist.svg" alt="image"/>
+                                <img src="{% static 'image/wishlist.svg' %}" alt="image"/>
                             </div>
                         </span></div>    
                     </div>
@@ -451,7 +451,7 @@
                             <span><a class="explore"href="#">MM's  Brand</a></span>
                         </div>
                         <div class="light-arrow">
-                            <img  src="image/arrow-right.svg" alt="image"/>
+                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                         
                     </div>
@@ -461,7 +461,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="image"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="image"/>
                                 </div>
                         </span></div>
                     </div>
@@ -488,14 +488,14 @@
                 <div class="feedback-cards1">
                     <div class="feedback-image">
                         <div class="profile">
-                            <img src="image/span-1.svg" alt="image"/>
+                            <img src="{% static 'image/span-1.svg' %}" alt="image"/>
                         </div>
                         <div class="stars">
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star_half.png" alt="image"/>
-                            <img src="image/star_outline.png" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star_half.png' %}" alt="image"/>
+                            <img src="{% static 'image/star_outline.png' %}" alt="image"/>
                         </div>
                     </div>
                     <h4 class="name">Floyd Miles</h4>
@@ -514,14 +514,14 @@
                 <div class="feedback-cards2">
                     <div class="feedback-image">
                             <div class="profile">
-                                <img src="image/span-2.svg" alt="image"/>
+                                <img src="{% static 'image/span-2.svg' %}" alt="image"/>
                             </div>
                         <div class="stars">
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star_outline.png" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star_outline.png' %}" alt="image"/>
                         </div>
                     </div>
                     <h4 class="name">Ronald Richards</h4>
@@ -532,14 +532,14 @@
                 <div class="feedback-cards3">
                     <div class="feedback-image">
                         <div class="profile">
-                            <img src="image/span-3.svg" alt="image"/>
+                            <img src="{% static 'image/span-3.svg' %}" alt="image"/>
                         </div>
                         <div class="stars">
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star.svg" alt="image"/>
-                            <img src="image/star_half.png" alt="image"/>
-                            <img src="image/star_outline.png" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star.svg'  %}" alt="image"/>
+                            <img src="{% static 'image/star.svg' %}" alt="image"/>
+                            <img src="{% static 'image/star_half.png' %}" alt="image"/>
+                            <img src="{% static 'image/star_outline.png' %}" alt="image"/>
                         </div>
                     </div>
                     <h4 class="name">Savannah Nguyen</h4>
@@ -594,22 +594,22 @@
                 <div class="mid-content">
                     <div class="mid-logos">
                         <span class="logo-whitebg">
-                            <a href="#"><img class="facebook" src="image/facebook.svg" alt=""></a>
+                            <a href="#"><img class="facebook" src="{% static 'image/facebook.svg' %}" alt=""></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="instagram" src="image/instagram.svg" alt=""></a>
+                            <a href="#"><img class="instagram" src="{% static 'image/instagram.svg' %}" alt=""></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="twitter" src="image/twitter.svg" alt=""></a>
+                            <a href="#"><img class="twitter" src="{% static 'image/twitter.svg' %}" alt=""></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class ="linkedin" src="image/linkedin.svg" alt=""></a>
+                            <a href="#"><img class ="linkedin" src="{% static 'image/linkedin.svg' %}" alt=""></a>
                         </span>
                     </div>
                     <div class="appstore">
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/playstore.svg" alt="image"/>
+                                <img src="{% static 'image/playstore.svg'%}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">android app on</h6></a>
@@ -618,7 +618,7 @@
                         </div>
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/phone.svg" alt="image"/>
+                                <img src="{% static 'image/phone.svg' %}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">Available on the</h6></a>
@@ -631,7 +631,7 @@
                 <div class="line"></div>
                 <div class="mid-bottom-font">
                     <h3 class="popular">Popular Categories</h3>
-                    <img class="arrow-down" src="image/arrow-down.svg" alt="image"/>
+                    <img class="arrow-down" src="{% static 'image/arrow-down.svg' %}" alt="image"/>
                 </div>
                 <div class="line"></div>
                 <div class="footer-bottom">

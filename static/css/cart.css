@@ -238,7 +238,7 @@
 }
 #products .products-list
  .product-card .card .card-img{
-    background-image: url(image/img-11.jpg);
+    background-image: url("/static/image/img-11.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -319,7 +319,7 @@
  }
  #products .products-list
  .product-card .card .card-img1{
-    background-image: url(image/img-12.jpg);
+    background-image: url("/static/image/img-12.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -400,7 +400,7 @@
  }
  #products .products-list
  .product-card .card .card-img2{
-    background-image: url(image/img-14.jpg);
+    background-image: url("/static/image/img-14.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -481,7 +481,7 @@
  }
  #products .products-list
  .product-card .card .card-img3{
-    background-image: url(image/img-9.jpg);
+    background-image: url("/static/image/img-9.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -562,7 +562,7 @@
  }
  #products .products-list
  .product-card .card .card-img4{
-    background-image: url(image/img-17.jpg);
+    background-image: url("/static/image/img-17.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -643,7 +643,7 @@
  }
  #products .products-list
  .product-card .card .card-img5{
-    background-image: url(image/img-8.jpg);
+    background-image: url("/static/image/img-8.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -724,7 +724,7 @@
  }
  #products .products-list
  .product-card .card .card-img6{
-    background-image: url(image/img-6.jpg);
+    background-image: url("/static/image/img-6.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -805,7 +805,7 @@
  }
  #products .products-list
  .product-card .card .card-img7{
-    background-image: url(image/img-5.jpg);
+    background-image: url("/static/image/img-5.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;
@@ -886,7 +886,7 @@
  }
  #products .products-list
  .product-card .card .card-img8{
-    background-image: url(image/img-10.jpg);
+    background-image: url("/static/image/img-10.jpg");
     width:282px ;
     height:370px ;
     background-repeat: no-repeat;

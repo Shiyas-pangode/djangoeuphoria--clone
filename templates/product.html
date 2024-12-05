@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'product.css' %}">
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=
     Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;
     900&family=Montserrat:ital,wght@0,100..900;1,100..900&family
@@ -18,7 +20,7 @@
     <section class ="wrapper">
         <section id ="navbar">
             <div class="header">
-                <h1><a href="#"><img src="image/Logo.svg" alt="image"/></a></h1>
+                <h1><a href="#"><img src="{% static 'image/Logo.svg' %}" alt="image"/></a></h1>
             </div>
             <ul class="nav-menu">
                 <li><a class="navmenu-text" href="#">Shop</a></li>
@@ -28,13 +30,13 @@
                 <li class="joggers"><a class="navmenu-text" href="#">Joggers</a></li>
             </ul>
             <div class="search-bar">
-                <img src="image/search.svg" alt="image"/>
+                <img src="{% static 'image/search.svg' %}" alt="image"/>
                 <input class="input" type="text" placeholder="search">
             </div>
             <div class="navbar-right">
-                <span><img src="image/wishlist.svg" alt="image"/></span>
-                <span><img src="image/account.svg" alt="image"/></span>
-                <span><img src="image/cart.svg" alt="image"/></span>
+                <span><img src="{% static 'image/wishlist.svg' %}" alt="image"/></span>
+                <span><img src="{% static 'image/account.svg' %}" alt="image"/></span>
+                <a href="{% url 'cart' %} "><span><img src="{% static 'image/cart.svg' %}" alt="image"/></span></a>
             </div>
         </section>
     </section>
@@ -44,28 +46,28 @@
             <div class="spot-left-img">
                 <div class="imgcard1">
                     <div class="card1img">
-                        <img src="image/img-25.jpg" alt="image"/>
+                        <img src="{% static 'image/img-25.jpg' %}" alt="image"/>
                     </div>
                 </div>
                 <div class="imgcard1">
                     <div class="card1img">
-                        <img src="image/Rectangle 11.png" alt="image"/>
+                        <img src="{% static 'image/Rectangle 11.png' %}" alt="image"/>
                     </div>
                 </div>
                 <div class="imgcard1">
                     <div class="card1img">
-                        <img src="image/Rectangle 10.png" alt="image"/>
+                        <img src="{% static 'image/Rectangle 10.png' %}" alt="image"/>
                     </div>
                 </div>
                 <div class="buttons">
                     <button class="button1">
                         <div class="arrow-up-img">
-                            <img src="image/left (Stroke).svg" alt="image"/>
+                            <img src="{% static 'image/left (Stroke).svg' %}" alt="image"/>
                         </div>
                     </button>
                     <button>
                         <div class="arrow-up-img1">
-                            <img src="image/left (Stroke).svg" alt="image"/>
+                            <img src="{% static 'image/left (Stroke).svg' %}" alt="image"/>
                         </div>
                     </button>
                 </div>
@@ -89,24 +91,24 @@
             <div class="rating-section">
                 <div class="stars">
                     <div class="rating-img">
-                        <img src="image/star.svg" alt="image"/>
+                        <img src="{% static 'image/star.svg' %}" alt="image"/>
                     </div>
                     <div class="rating-img">
-                        <img src="image/star.svg" alt="image"/>
+                        <img src="{% static 'image/star.svg' %}" alt="image"/>
                     </div>
                     <div class="rating-img">
-                        <img src="image/star.svg" alt="image"/>
+                        <img src="{% static 'image/star.svg' %}" alt="image"/>
                     </div>
                     <div class="rating-img">
-                        <img src="image/star.svg" alt="image"/>
+                        <img src="{% static 'image/star.svg' %}" alt="image"/>
                     </div>
                     <div class="rating-img">
-                        <img src="image/star.svg" alt="image"/>
+                        <img src="{% static 'image/star.svg' %}" alt="image"/>
                     </div>
                     <small class="star-nb">3.5</small>
                 </div>
                 <div class="comment-imoji">
-                    <img src="image/message.svg" alt=""/>
+                    <img src="{% static 'image/message.svg' %}" alt="image"/>
                 </div>
                 <h6 class="comment-text">120 comment</h6>
             </div>
@@ -115,7 +117,7 @@
                     <small class="bold-text">Select Size</small>
                     <small class="normal-text">Size Guide</small>
                     <div class="size-arrow">
-                        <img  src="image/arrow-right.svg" alt="image"/>
+                        <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                     </div>
                 </div>
                 <div class="size">
@@ -144,7 +146,7 @@
                 </div>
             </div>
             <div class="button-section">
-                <button class="cart"><div class="cartbutton"><img src="image/cart-1.svg" alt="image"/></div>Add to cart</button>
+                <a href="{% url 'cart' %}"><button class="cart"><div class="cartbutton"><img src="{% static 'image/cart-1.svg' %}" alt="image"/></div>Add to cart</button></a>
                 <button class="price">$63.00</button>
             </div>
             <div class="line"></div>
@@ -152,7 +154,7 @@
                 <div class="options-content">
                     <span>
                         <div class="option-img">
-                            <img src="image/credit card.svg" alt="image"/>
+                            <img src="{% static 'image/credit card.svg' %}" alt="image"/>
                         </div>
                     </span>
                     <small class="option-text">Secure payment</small>
@@ -160,7 +162,7 @@
                 <div class="options-content">
                     <span>
                         <div class="option-img">
-                            <img src="image/Size&Fit.svg" alt="image"/>
+                            <img src="{% static 'image/Size&Fit.svg' %}" alt="image"/>
                         </div>
                     </span>
                     <small class="option-text">Size & Fit</small>
@@ -168,7 +170,7 @@
                 <div class="options-content">
                     <span>
                         <div class="option-img">
-                            <img src="image/truck.svg" alt="image"/>
+                            <img src="{% static 'image/truck.svg' %}" alt="image"/>
                         </div>
                     </span>
                     <small class="option-text">Free shipping</small>
@@ -176,7 +178,7 @@
                 <div class="options-content1">
                     <span >
                         <div  class="option-img">
-                            <img src="image/Free-Shipping&Returns.svg" alt="image"/>
+                            <img src="{% static 'image/Free-Shipping&Returns.svg' %}" alt="image"/>
                         </div>
                     </span>
                     <small  class="option-text">Free Shipping & Returns</small>
@@ -255,7 +257,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                             <div class="wishlist">
-                                <img class="wishlist-icon" src="image/wishlist.svg" alt="image"/>
+                                <img class="wishlist-icon" src="{% static 'image/wishlist.svg' %}" alt="image"/>
                             </div>
                         </span></div>
                     </div>
@@ -265,7 +267,7 @@
                             <span><a class="explore" href="#">Jhanvi's  Brand</a></span>
                         </div>
                         <div class="light-arrow">
-                            <img class="wishlist-icon" src="image/arrow-right.svg" alt="image"/>
+                            <img class="wishlist-icon" src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -274,17 +276,20 @@
                         <div class="span">
                             <span class="image-whitespace">
                             <div class="wishlist">
-                                <img class="wishlist-icon" src="image/wishlist.svg" alt="image"/>
+                                <img class="wishlist-icon" src="{% static 'image/wishlist.svg' %}" alt="image"/>
                             </div>
                         </span></div>
                     </div>
                     <div class="image-text-arrow">
                         <div class="image-text">
                             <h6 class="image-text1">line Pattern Black H...</h6>
-                            <span><a class="explore" href="#">AS's  Brand</a></span>
+                            {% for item in title %}
+                            <span><a class="explore" href="#">{{ item.title }}</a></span>
+                            {% empty %}
+                            {% endfor %}
                         </div>
                         <div class="light-arrow">
-                            <img  src="image/arrow-right.svg" alt="image"/>
+                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                     </div>
                 </div>
@@ -293,7 +298,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                             <div class="wishlist">
-                                <img class="wishlist-icon" src="image/wishlist.svg" alt="image"/>
+                                <img class="wishlist-icon" src="{% static 'image/wishlist.svg' %}" alt="image"/>
                             </div>
                         </span></div>    
                     </div>
@@ -303,7 +308,7 @@
                             <span><a class="explore"href="#">MM's  Brand</a></span>
                         </div>
                         <div class="light-arrow">
-                            <img  src="image/arrow-right.svg" alt="image"/>
+                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
                         </div>
                         
                     </div>
@@ -313,7 +318,7 @@
                         <div class="span">
                             <span class="image-whitespace">
                                 <div class="wishlist">
-                                    <img class="wishlist-icon" src="image/wishlist.svg" alt="image"/>
+                                    <img class="wishlist-icon" src="{% static 'image/wishlist.svg' %}" alt="image"/>
                                 </div>
                         </span></div>
                     </div>
@@ -368,22 +373,22 @@
                 <div class="mid-content">
                     <div class="mid-logos">
                         <span class="logo-whitebg">
-                            <a href="#"><img class="facebook" src="image/facebook.svg" alt=""></a>
+                            <a href="#"><img class="facebook" src="{% static 'image/facebook.svg' %}" alt="image"/></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="instagram" src="image/instagram.svg" alt=""></a>
+                            <a href="#"><img class="instagram" src="{% static 'image/instagram.svg' %}" alt="image"/></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="twitter" src="image/twitter.svg" alt=""></a>
+                            <a href="#"><img class="twitter" src="{% static 'image/twitter.svg' %}" alt="image"/></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class ="linkedin" src="image/linkedin.svg" alt=""></a>
+                            <a href="#"><img class ="linkedin" src="{% static 'image/linkedin.svg' %}" alt="image"/></a>
                         </span>
                     </div>
                     <div class="appstore">
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/playstore.svg" alt="image"/>
+                                <img src="{% static 'image/playstore.svg' %}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">android app on</h6></a>
@@ -392,7 +397,7 @@
                         </div>
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/phone.svg" alt="image"/>
+                                <img src="{% static 'image/phone.svg' %}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">Available on the</h6></a>
@@ -404,7 +409,7 @@
                 <div class="line"></div>
                 <div class="mid-bottom-font">
                     <h3 class="popular">Popular Categories</h3>
-                    <img class="arrow-down" src="image/arrow-down.svg" alt="image"/>
+                    <img class="arrow-down" src="{% static 'image/arrow-down.svg' %}" alt="image"/>
                 </div>
                 <div class="line"></div>
                 <div class="footer-bottom">
@@ -415,8 +420,8 @@
             </div>
         </div>
     </section>
-    <script src="{% static 'script.js' %}"></script>
-    <script src="{% static 'product.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/product.js' %}"></script>
 
 </body>
 </html>

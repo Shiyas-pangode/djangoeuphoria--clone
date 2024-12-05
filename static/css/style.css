@@ -756,14 +756,14 @@ display: flex;
 
 
 .wrapper .light-content .light-image{
-    background-image: url(image/img-16.jpg);
+    background-image: url("/static/image/img-16.jpg");
     width: 282px;
     height: 370px;
     border-radius: 12px ;
     overflow: hidden;
 }
 .wrapper .light-content .light-image1{
-    background-image: url(image/img-17.jpg);
+    background-image: url("/static/image/img-17.jpg");
     width: 282px;
     height: 370px;
     border-radius: 12px ;
@@ -783,7 +783,7 @@ display: flex;
     align-items: center;
 }
 .wrapper .light-content .light-image2{
-    background-image: url(image/img-18.jpg);
+    background-image: url("/static/image/img-18.jpg");
     width: 282px;
     height: 370px;
     border-radius: 12px ;
@@ -803,7 +803,7 @@ display: flex;
     align-items: center;
 }
 .wrapper .light-content .light-image3{
-    background-image: url(image/img-19.jpg);
+    background-image: url("/static/image/img-19.jpg");
     width: 282px;
     height: 370px;
     border-radius: 12px ;
@@ -843,8 +843,8 @@ display: flex;
    display: block;
    width: 100%;
    cursor: pointer;
-   mask-image: url('image/wishlist.svg');
-   -webkit-mask-image: url('image/wishlist.svg');
+   mask-image: url('/static/image/wishlist.svg');
+   -webkit-mask-image: url('/static/image/wishlist.svg');
    /* mask-size: contain;
    mask-repeat: no-repeat;
    -webkit-mask-size: contain;

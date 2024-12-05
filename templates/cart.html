@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,7 @@
                 <h3 class="log-out-cursor">Log-Out</h3>
             </div>
             <div class="header">
-                <h1><a href="#"><img src="image/Logo.svg" alt="image"/></a></h1>
+                <h1><a href="#"><img src="{% static 'image/Logo.svg' %}" alt="image"/></a></h1>
             </div>
             <ul class="nav-menu">
                 <li><a class="navmenu-text" href="#">Shop</a></li>
@@ -31,14 +33,14 @@
                 <li class="joggers"><a class="navmenu-text" href="#">Joggers</a></li>
             </ul>
             <div class="search-bar">
-                <img src="image/search.svg" alt="image"/>
+                <img src="{% static 'image/search.svg' %}" alt="image"/>
                 <input class="input" type="text" placeholder="search">
             </div>
             <div class="navbar-right">
-                <span><img src="image/wishlist.svg" alt="image"/></span>
-                <div class="logprofile"><img class="dp" src="image/store-chat-specialist-icon-202309_AV1.jpg" alt="image"/></div>
-                <span class="account"><img src="image/account.svg" alt="image"/></span>
-                <a href="cart.html"><span><img src="image/cart.svg" alt="image"/></span></a>
+                <span><img src="{% static 'image/wishlist.svg' %}" alt="image"/></span>
+                <div class="logprofile"><img class="dp" src="{% static 'image/store-chat-specialist-icon-202309_AV1.jpg' %}" alt="image"/></div>
+                <span class="account"><img src="{% static 'image/account.svg' %}" alt="image"/></span>
+                <a href="{% url 'cart' %} "><span><img src="{% static 'image/cart.svg' %}" alt="image"/></span></a>
             </div>
            
         </section>
@@ -76,7 +78,7 @@
 
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -96,7 +98,7 @@
                         <div class="card-img1">
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -117,7 +119,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -138,7 +140,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -161,7 +163,7 @@
 
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -181,7 +183,7 @@
                         <div class="card-img5">
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -202,7 +204,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -223,7 +225,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -246,7 +248,7 @@
 
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -266,7 +268,7 @@
                         <div class="card-img1">
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -287,7 +289,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -308,7 +310,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -331,7 +333,7 @@
 
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -351,7 +353,7 @@
                         <div class="card-img5">
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -372,7 +374,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -393,7 +395,7 @@
     
                             <span class="white-bg">
                                 <div class="wishlist">
-                                    <img src="image/wishlist.svg" alt="wishlist"/>
+                                    <img src="{% static 'image/wishlist.svg' %}" alt="wishlist"/>
                                 </div>
                             </span>
                         </div>
@@ -452,22 +454,22 @@
                 <div class="mid-content">
                     <div class="mid-logos">
                         <span class="logo-whitebg">
-                            <a href="#"><img class="facebook" src="image/facebook.svg" alt=""></a>
+                            <a href="#"><img class="facebook" src="{% static 'image/facebook.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="instagram" src="image/instagram.svg" alt=""></a>
+                            <a href="#"><img class="instagram" src="{% static 'image/instagram.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="twitter" src="image/twitter.svg" alt=""></a>
+                            <a href="#"><img class="twitter" src="{% static 'image/twitter.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class ="linkedin" src="image/linkedin.svg" alt=""></a>
+                            <a href="#"><img class ="linkedin" src="{% static 'image/linkedin.svg' %}" alt="image"></a>
                         </span>
                     </div>
                     <div class="appstore">
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/playstore.svg" alt="image"/>
+                                <img src="{% static 'image/playstore.svg' %}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">android app on</h6></a>
@@ -476,7 +478,7 @@
                         </div>
                         <div class="appstore-content">
                             <div class="playstore">
-                                <img src="image/phone.svg" alt="image"/>
+                                <img src="{% static 'image/phone.svg' %}" alt="image"/>
                             </div>
                             <span>
                                 <a href="#"><h6 class="store-text1">Available on the</h6></a>
@@ -488,7 +490,7 @@
                 <div class="line"></div>
                 <div class="mid-bottom-font">
                     <h3 class="popular">Popular Categories</h3>
-                    <img class="arrow-down" src="image/arrow-down.svg" alt="image"/>
+                    <img class="arrow-down" src="{% static 'image/arrow-down.svg' %}" alt="image"/>
                 </div>
                 <div class="line"></div>
                 <div class="footer-bottom">

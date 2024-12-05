@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Please Login");
                 if (loginPage) loginPage.style.display = "block";
             } else {
-                alert("Action performed successfully!");
+                
+                
             }
         });
     });
@@ -81,24 +82,25 @@ document.addEventListener("DOMContentLoaded", () => {
     account1.addEventListener("click",(open) => {
         logOutPage.style.display="flex";
     });
-    const wishlistIcons = document.querySelectorAll('.wishlist');
-    wishlistIcons.forEach((like1)=>{
-
-    like1.addEventListener("click",(event) =>{
-        const redFilter = "invert(1) sepia(1) saturate(10000%) hue-rotate(0deg)";
-        // const redFilter ="red"
-    if (event.target.style.filter===redFilter){
-        
-        event.target.style.filter="";
-        // localStorage.setItem("imageFilter","");
-    } else{
-        event.target.style.filter=redFilter;
-        // localStorage.setItem("imageFilter",redFilter);
-    }
-
     
-    });
-    });
 
 });
 
+        const wishlistIcons = document.querySelectorAll('.wishlist');
+            wishlistIcons.forEach((like1)=>{
+        
+            like1.addEventListener("click",(event) =>{
+                const redFilter = "invert(1) sepia(1) saturate(10000%) hue-rotate(0deg)";
+                // const redFilter ="red"
+            if (event.target.style.filter===redFilter){
+                
+                event.target.style.filter="";
+                // localStorage.setItem("imageFilter","");
+            } else{
+                event.target.style.filter=redFilter;
+                // localStorage.setItem("imageFilter",redFilter);
+            }
+        
+            
+            });
+            }); 

@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     clickableElements.forEach((element) => {
         element.addEventListener("click", () => {
-            if (!isLoggedIn) {
+            if (!isLoggedIn , false) {
                 alert("Please Login");
                 if (loginPage) loginPage.style.display = "block";
             } else {

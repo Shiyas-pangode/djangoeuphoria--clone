@@ -428,7 +428,9 @@
                     </div>
                     <div class="image-text-arrow">
                         <div class="image-text">
-                            <h6 class="image-text1">line Pattern Black H...</h6>
+                            {% for TextUpload in TextUploads %}
+                            <h6 class="image-text1">{{ TextUpload.title }}</h6>
+                            {% endfor %}
                             <span><a class="explore" href="#">AS's  Brand</a></span>
                         </div>
                         <div class="light-arrow">

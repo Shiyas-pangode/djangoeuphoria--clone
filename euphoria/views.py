@@ -3,8 +3,17 @@ from django.http import HttpResponse
 from  .models import ImageUpload
 from .models import TextUpload
 
+
 def index(request):
-    return render(request ,"index.html")
+    ImageUploads = ImageUpload.objects.all()
+    TextUploads = TextUpload.objects.all()
+    context = {
+        "ImageUploads" :ImageUploads,
+        "TextUploads" : TextUploads
+    }
+    return render(request ,"index.html", context = context)
+    
+
 
 def shiyas(request):
     return HttpResponse("hiiii")

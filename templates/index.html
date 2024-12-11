@@ -6,7 +6,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>euphoria</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href= "{% static 'image/Logo.svg' %}" type="image/x-icon">
     <link rel="stylesheet" href= "{% static 'css/style.css'  %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +98,7 @@
                     <h2 class="mid-textleft">High Coziness</h2>
                     <h4 class="leftcard-off">UPTO 50% OFF</h4>
                     <h6 class="leftcard-link"><a href="#">Explore Items</a></h6>
+                    <div class="leftcard-line"></div>
                 </div>
             </div>
             <div class="offercard-right">
@@ -106,6 +107,7 @@
                     <h2 class="mid-textright">Breezy Summer Style</h2>
                     <h4 class="rightcard-off">UPTO 50% OFF</h4>
                     <h6 class="rightcard-link"><a href="#">Explore Items</a></h6>
+                    <div class="rightcard-line"></div>
                 </div>
             </div>
         </div>
@@ -411,8 +413,8 @@
                             <h6 class="image-text1">Black Sweatshirt with ....</h6>
                             <span><a class="explore" href="#">Jhanvi's  Brand</a></span>
                         </div>
-                       <div class="light-arrow">
-                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
+                        <div class="rate">
+                            <h6 class="number">$123.00</h6>
                         </div>
                     </div>
                 </div>
@@ -433,8 +435,8 @@
                             {% endfor %}
                             <span><a class="explore" href="#">AS's  Brand</a></span>
                         </div>
-                        <div class="light-arrow">
-                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
+                        <div class="rate">
+                            <h6 class="number">$37.00</h6>
                         </div>
                     </div>
                 </div>
@@ -452,8 +454,8 @@
                             <h6 class="image-text1">Black Shorts</h6>
                             <span><a class="explore"href="#">MM's  Brand</a></span>
                         </div>
-                        <div class="light-arrow">
-                            <img  src="{% static 'image/arrow-right.svg' %}" alt="image"/>
+                        <div class="rate">
+                            <h6 class="number">$37.00</h6>
                         </div>
                         
                     </div>
@@ -596,16 +598,16 @@
                 <div class="mid-content">
                     <div class="mid-logos">
                         <span class="logo-whitebg">
-                            <a href="#"><img class="facebook" src="{% static 'image/facebook.svg' %}" alt=""></a>
+                            <a href="#"><img class="facebook" src="{% static 'image/facebook.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="instagram" src="{% static 'image/instagram.svg' %}" alt=""></a>
+                            <a href="#"><img class="instagram" src="{% static 'image/instagram.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class="twitter" src="{% static 'image/twitter.svg' %}" alt=""></a>
+                            <a href="#"><img class="twitter" src="{% static 'image/twitter.svg' %}" alt="image"></a>
                         </span>
                         <span class="logo-whitebg">
-                            <a href="#"><img class ="linkedin" src="{% static 'image/linkedin.svg' %}" alt=""></a>
+                            <a href="#"><img class ="linkedin" src="{% static 'image/linkedin.svg' %}" alt="image"></a>
                         </span>
                     </div>
                     <div class="appstore">

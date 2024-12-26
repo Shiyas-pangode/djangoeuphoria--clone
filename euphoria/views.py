@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from  .models import ImageUpload
-from .models import TextUpload
+from .models import ImageUpload
+from . models import TextUpload
+from . models import ProductLoad 
+
 
 
 def index(request):

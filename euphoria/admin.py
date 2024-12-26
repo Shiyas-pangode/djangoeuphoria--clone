@@ -1,20 +1,29 @@
 from django.contrib import admin
-from  .models import ImageUpload
 from django.utils.html import format_html
-from .models import TextUpload
-from . models import ProductLoad
+from . models import TextUpload, ImageUpload ,ProductLoad ,Task
 
-admin.site.register(ImageUpload)
+
+
+
+class TaskAdmin(admin.ModelAdmin):
+    list_display = ('title','description','completed','created_at','updated_at')
+admin.site.register (Task ,TaskAdmin)
+
+
 class ImageUploadAdmin(admin.ModelAdmin):
     list_display = ('title', 'image')
 
+admin.site.register(ImageUpload , ImageUploadAdmin)
 
 
-admin.site.register(TextUpload)
 class productTextAdmin(admin.ModelAdmin):
     list_display = ('title',)
+admin.site.register(TextUpload ,productTextAdmin)
 
 
-admin.site.register(ProductLoad)
+
 class ProductthingAdmin(admin.ModelAdmin):
-    list_display =('name','image')
+    list_display =('title','image',)
+
+admin.site.register(ProductLoad ,ProductthingAdmin)
+

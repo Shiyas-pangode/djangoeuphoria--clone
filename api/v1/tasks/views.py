@@ -41,28 +41,28 @@ def create_api(request):
     print(requestdata)
 
 
-@api_view([ 'GET','PUT', 'DELETE'])
+@api_view([ 'GET','PUT', 'DELETE' ])
 
 def detail_api(request , pk):
     try:
-        User = Task.object.get(pk=pk)
-    except User.DoesNotExist:
+        task = Task.objects.get(pk=pk)
+    except Task.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
-        serializers= TaskSerializer(User)
+        serializers= TaskSerializer(task)
         return Response(serializers.data)
 
     elif request.method == 'PUT':
-        serializers =TaskSerializer(User , data = request.data)
+        serializers =TaskSerializer(task , data = request.data)
         if serializers.is_valid():
             serializers.save()
             return Response(serializers.data)
         return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
 
     elif request.method == 'DELETE' :
-        serializers =User.delete()
-        return response(status=status.HTTP_204_NO_CONTENT)
+        task.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
     
 
 

@@ -10,7 +10,7 @@ urlpatterns = [
 
     path('post/', views.create_api , name = 'postrequest'),
 
-    path('post/<int:pk>', views.detail_api , name = 'detailrequest'),
+    path('post/<int:pk>/', views.detail_api , name = 'detailrequest'),
 
     path('token/' ,jwt_views.TokenObtainPairView.as_view(),name ='token_refresh'),
 

@@ -7,18 +7,19 @@ from django.http import JsonResponse
 from euphoria.models import product
 from .serializers import CartSerializer
 from rest_framework.permissions import IsAuthenticated
+from .permissions import IsAdminOrReadOnly
 
 
 
 class create_product(generics.ListCreateAPIView):
     queryset = product.objects.all()
     serializer_class = CartSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated , IsAdminOrReadOnly]
 
 class ProductRetrieve(generics.RetrieveUpdateDestroyAPIView):
     queryset = product.objects.all()
     serializer_class = CartSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated , IsAdminOrReadOnly]
 
 
 

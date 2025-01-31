@@ -23,15 +23,12 @@ class ImageUpload(models.Model):
 
         
 class TextUpload(models.Model):
-    
     title = models.CharField(max_length = 100)
 
     def __str__(self):
         return self.title
 
 class ProductLoad(models.Model):
-
-
     title = models.CharField(max_length=255, default="Default Title")
     image = models.ImageField(upload_to = 'images/')
 
@@ -51,7 +48,6 @@ class product(models.Model):
         return self.name
 
 class Cart(models.Model):
-    
     user = models.ForeignKey(User , on_delete=models.CASCADE)
     product = models.ForeignKey(product, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=1)

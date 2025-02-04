@@ -11,10 +11,12 @@ urlpatterns = [
 
     path('api/' ,include('api.v1.tasks.urls')),
 
-    path('product/' ,include('api.v1.productManagement.urls')),
+    path('api/product/' ,include('api.v1.productManagement.urls')),
 
-    path( 'auth/' ,include('api.v1.userAuthentication.urls')),
+    path( 'api/auth/' ,include('api.v1.userAuthentication.urls')),
     
-    path( 'Cart/' ,include('api.v1.CartManagement.urls')),
+    path( 'api/Cart/' ,include('api.v1.CartManagement.urls')),
+    
+    path( 'api/order/' , include('api.v1.userorders.urls')),
 
 ]

@@ -1,10 +1,14 @@
-from rest_framework import generics, status
-from rest_framework.views import APIView
-from euphoria.models import Cart, product
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.exceptions import NotFound
-from .serializers import CartViewSerializer
+from rest_framework import generics, status  
+from rest_framework.views import APIView  
+from rest_framework.response import Response  
+from rest_framework.permissions import IsAuthenticated  
+from rest_framework.exceptions import NotFound  
+
+from django.shortcuts import get_object_or_404  
+
+from euphoria.models import Cart, product  
+from .serializers import CartViewSerializer  
+
 
 
 class Cart_View(APIView):

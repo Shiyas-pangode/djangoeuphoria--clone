@@ -6,8 +6,9 @@ from rest_framework.exceptions import NotFound
 
 from django.shortcuts import get_object_or_404  
 
-from euphoria.models import Cart, product  
+from euphoria.models import Cart, Product  
 from .serializers import CartViewSerializer  
+
 
 
 
